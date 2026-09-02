@@ -51,6 +51,7 @@ def generate_all_insights(df: pd.DataFrame) -> dict:
         'day_sales': get_day_sales(df),
         'segmentation': get_segmentation(df),
         'outliers': detect_outliers_iqr(df),
-        'pareto': get_pareto_analysis(df)
+        'pareto': get_pareto_analysis(df),
+        'summary_stats': df[['Sales', 'Unit price', 'Quantity', 'Rating']].describe()
     }
     return insights

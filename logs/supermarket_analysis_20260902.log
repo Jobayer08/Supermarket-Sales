@@ -1,96 +1,65 @@
-2026-09-02 19:33:52,415 - supermarket_analysis - INFO - 🚀 Supermarket Sales Pipeline শুরু হচ্ছে...
-2026-09-02 19:33:52,415 - supermarket_analysis - INFO - ডেটা লোড করা শুরু: data/supermarket_sales.csv
-2026-09-02 19:33:52,436 - supermarket_analysis - DEBUG - ফাইল সাইজ: 583995 বাইটস
-2026-09-02 19:33:52,436 - supermarket_analysis - INFO - ✅ ডেটা সফলভাবে লোড হয়েছে। 1000 সারি, 17 কলাম।
-2026-09-02 19:33:52,437 - supermarket_analysis - INFO - ডেটা ক্লিনিং শুরু...
-2026-09-02 19:33:52,468 - supermarket_analysis - INFO - ✅ ডেটা ক্লিনিং সম্পন্ন হয়েছে।
-2026-09-02 19:33:52,469 - supermarket_analysis - INFO - ফিচার ইঞ্জিনিয়ারিং: Day of Week যোগ করা হচ্ছে
-2026-09-02 19:33:52,471 - supermarket_analysis - INFO - অ্যানালাইসিস চলছে...
-2026-09-02 19:33:52,504 - supermarket_analysis - INFO - ভিজুয়ালাইজেশন তৈরি হচ্ছে...
-2026-09-02 19:33:56,788 - supermarket_analysis - INFO - ============================================================
-2026-09-02 19:33:56,788 - supermarket_analysis - INFO - ব্যবসায়িক ইনসাইট রিপোর্ট
-2026-09-02 19:33:56,788 - supermarket_analysis - INFO - ============================================================
-2026-09-02 19:33:56,788 - supermarket_analysis - INFO - শাখা পারফরম্যান্স: Giza (সর্বোচ্চ: $110,568.71)
-2026-09-02 19:33:56,789 - supermarket_analysis - INFO - পারেটো: 4 টি পণ্যライン ৮০% বিক্রি তৈরি করছে।
-2026-09-02 19:33:56,789 - supermarket_analysis - INFO - সেরা দিন: Saturday ($56,120.81)
-2026-09-02 19:33:56,789 - supermarket_analysis - INFO - হাই-ভ্যালু অর্ডার: 9 টি
-2026-09-02 19:33:56,791 - supermarket_analysis - CRITICAL - 'Total'
-2026-09-02 19:36:34,799 - supermarket_analysis - INFO - 🚀 Supermarket Sales Pipeline শুরু হচ্ছে...
-2026-09-02 19:36:34,800 - supermarket_analysis - INFO - ডেটা লোড করা শুরু: data/supermarket_sales.csv
-2026-09-02 19:36:34,812 - supermarket_analysis - DEBUG - ফাইল সাইজ: 583995 বাইটস
-2026-09-02 19:36:34,812 - supermarket_analysis - INFO - ✅ ডেটা সফলভাবে লোড হয়েছে। 1000 সারি, 17 কলাম।
-2026-09-02 19:36:34,812 - supermarket_analysis - INFO - ডেটা ক্লিনিং শুরু...
-2026-09-02 19:36:34,828 - supermarket_analysis - INFO - ✅ ডেটা ক্লিনিং সম্পন্ন হয়েছে।
-2026-09-02 19:36:34,828 - supermarket_analysis - INFO - ফিচার ইঞ্জিনিয়ারিং: Day of Week যোগ করা হচ্ছে
-2026-09-02 19:36:34,830 - supermarket_analysis - INFO - অ্যানালাইসিস চলছে...
-2026-09-02 19:36:34,847 - supermarket_analysis - INFO - ভিজুয়ালাইজেশন তৈরি হচ্ছে...
-2026-09-02 19:36:38,772 - supermarket_analysis - INFO - ============================================================
-2026-09-02 19:36:38,772 - supermarket_analysis - INFO - ব্যবসায়িক ইনসাইট রিপোর্ট
-2026-09-02 19:36:38,773 - supermarket_analysis - INFO - ============================================================
-2026-09-02 19:36:38,773 - supermarket_analysis - INFO - শাখা পারফরম্যান্স: Giza (সর্বোচ্চ: $110,568.71)
-2026-09-02 19:36:38,774 - supermarket_analysis - INFO - পারেটো: 4 টি পণ্যライン ৮০% বিক্রি তৈরি করছে।
-2026-09-02 19:36:38,774 - supermarket_analysis - INFO - সেরা দিন: Saturday ($56,120.81)
-2026-09-02 19:36:38,774 - supermarket_analysis - INFO - হাই-ভ্যালু অর্ডার: 9 টি
-2026-09-02 19:36:38,776 - supermarket_analysis - CRITICAL - 'Total'
-2026-09-02 19:37:22,173 - supermarket_analysis - INFO - 🚀 Supermarket Sales Pipeline শুরু হচ্ছে...
-2026-09-02 19:37:22,173 - supermarket_analysis - INFO - ডেটা লোড করা শুরু: data/supermarket_sales.csv
-2026-09-02 19:37:22,185 - supermarket_analysis - DEBUG - ফাইল সাইজ: 583995 বাইটস
-2026-09-02 19:37:22,185 - supermarket_analysis - INFO - ✅ ডেটা সফলভাবে লোড হয়েছে। 1000 সারি, 17 কলাম।
-2026-09-02 19:37:22,185 - supermarket_analysis - INFO - ডেটা ক্লিনিং শুরু...
-2026-09-02 19:37:22,201 - supermarket_analysis - INFO - ✅ ডেটা ক্লিনিং সম্পন্ন হয়েছে।
-2026-09-02 19:37:22,201 - supermarket_analysis - INFO - ফিচার ইঞ্জিনিয়ারিং: Day of Week যোগ করা হচ্ছে
-2026-09-02 19:37:22,202 - supermarket_analysis - INFO - অ্যানালাইসিস চলছে...
-2026-09-02 19:37:22,219 - supermarket_analysis - INFO - ভিজুয়ালাইজেশন তৈরি হচ্ছে...
-2026-09-02 19:37:26,428 - supermarket_analysis - INFO - ============================================================
-2026-09-02 19:37:26,428 - supermarket_analysis - INFO - ব্যবসায়িক ইনসাইট রিপোর্ট
-2026-09-02 19:37:26,429 - supermarket_analysis - INFO - ============================================================
-2026-09-02 19:37:26,429 - supermarket_analysis - INFO - শাখা পারফরম্যান্স: Giza (সর্বোচ্চ: $110,568.71)
-2026-09-02 19:37:26,430 - supermarket_analysis - INFO - পারেটো: 4 টি পণ্যライン ৮০% বিক্রি তৈরি করছে।
-2026-09-02 19:37:26,430 - supermarket_analysis - INFO - সেরা দিন: Saturday ($56,120.81)
-2026-09-02 19:37:26,430 - supermarket_analysis - INFO - হাই-ভ্যালু অর্ডার: 9 টি
-2026-09-02 19:37:26,432 - supermarket_analysis - INFO - টপ সেগমেন্ট: Member - Female (গড়: $351.70)
-2026-09-02 19:37:26,432 - supermarket_analysis - INFO - ============================================================
-2026-09-02 19:37:26,432 - supermarket_analysis - INFO - ✅ পুরো পাইপলাইন সফলভাবে সম্পন্ন হয়েছে!
-2026-09-02 20:18:09,166 - supermarket_analysis - INFO - 🚀 Supermarket Sales Pipeline শুরু হচ্ছে...
-2026-09-02 20:18:09,166 - supermarket_analysis - INFO - ডেটা লোড করা শুরু: data/supermarket_sales.csv
-2026-09-02 20:18:09,167 - supermarket_analysis - ERROR - ফাইল পাওয়া যায়নি: 'data/supermarket_sales.csv'
-2026-09-02 20:18:09,167 - supermarket_analysis - CRITICAL - ❌ ডেটা ফাইল 'data/supermarket_sales.csv' খুঁজে পাওয়া যায়নি। দয়া করে ফাইলটি 'data/' ফোল্ডারে রাখুন।
-2026-09-02 20:20:24,556 - supermarket_analysis - INFO - 🚀 Supermarket Sales Pipeline শুরু হচ্ছে...
-2026-09-02 20:20:24,556 - supermarket_analysis - INFO - ডেটা লোড করা শুরু: data/supermarket_sales.csv
-2026-09-02 20:20:24,568 - supermarket_analysis - DEBUG - ফাইল সাইজ: 583995 বাইটস
-2026-09-02 20:20:24,569 - supermarket_analysis - INFO - ✅ ডেটা সফলভাবে লোড হয়েছে। 1000 সারি, 17 কলাম।
-2026-09-02 20:20:24,569 - supermarket_analysis - INFO - ডেটা ক্লিনিং শুরু...
-2026-09-02 20:20:24,584 - supermarket_analysis - INFO - ✅ ডেটা ক্লিনিং সম্পন্ন হয়েছে।
-2026-09-02 20:20:24,584 - supermarket_analysis - INFO - ফিচার ইঞ্জিনিয়ারিং: Day of Week যোগ করা হচ্ছে
-2026-09-02 20:20:24,586 - supermarket_analysis - INFO - অ্যানালাইসিস চলছে...
-2026-09-02 20:20:24,603 - supermarket_analysis - INFO - ভিজুয়ালাইজেশন তৈরি হচ্ছে...
-2026-09-02 20:20:28,574 - supermarket_analysis - INFO - ============================================================
-2026-09-02 20:20:28,575 - supermarket_analysis - INFO - ব্যবসায়িক ইনসাইট রিপোর্ট
-2026-09-02 20:20:28,575 - supermarket_analysis - INFO - ============================================================
-2026-09-02 20:20:28,575 - supermarket_analysis - INFO - শাখা পারফরম্যান্স: Giza (সর্বোচ্চ: $110,568.71)
-2026-09-02 20:20:28,576 - supermarket_analysis - INFO - পারেটো: 4 টি পণ্যライン ৮০% বিক্রি তৈরি করছে।
-2026-09-02 20:20:28,576 - supermarket_analysis - INFO - সেরা দিন: Saturday ($56,120.81)
-2026-09-02 20:20:28,577 - supermarket_analysis - INFO - হাই-ভ্যালু অর্ডার: 9 টি
-2026-09-02 20:20:28,580 - supermarket_analysis - INFO - টপ সেগমেন্ট: Member - Female (গড়: $351.70)
-2026-09-02 20:20:28,580 - supermarket_analysis - INFO - ============================================================
-2026-09-02 20:20:28,580 - supermarket_analysis - INFO - ✅ পুরো পাইপলাইন সফলভাবে সম্পন্ন হয়েছে!
-2026-09-02 21:14:55,487 - supermarket_analysis - INFO - ডেটা ক্লিনিং শুরু...
-2026-09-02 21:14:55,495 - supermarket_analysis - INFO - ✅ ডেটা ক্লিনিং সম্পন্ন হয়েছে।
-2026-09-02 21:14:55,499 - supermarket_analysis - INFO - ডেটা ক্লিনিং শুরু...
-2026-09-02 21:14:55,503 - supermarket_analysis - WARNING - অবৈধ রেটিং (2 টি) পাওয়া গেছে। এগুলো ড্রপ করা হচ্ছে।
-2026-09-02 21:14:55,505 - supermarket_analysis - INFO - ✅ ডেটা ক্লিনিং সম্পন্ন হয়েছে।
-2026-09-02 21:14:55,507 - supermarket_analysis - INFO - ডেটা ক্লিনিং শুরু...
-2026-09-02 21:14:55,513 - supermarket_analysis - INFO - ডুপ্লিকেট সরানো হয়েছে: 1 টি
-2026-09-02 21:14:55,515 - supermarket_analysis - INFO - ✅ ডেটা ক্লিনিং সম্পন্ন হয়েছে।
-2026-09-02 21:14:55,517 - supermarket_analysis - INFO - ডেটা ক্লিনিং শুরু...
-2026-09-02 21:14:55,524 - supermarket_analysis - INFO - ✅ ডেটা ক্লিনিং সম্পন্ন হয়েছে।
-2026-09-02 21:15:40,174 - supermarket_analysis - INFO - ডেটা ক্লিনিং শুরু...
-2026-09-02 21:15:40,182 - supermarket_analysis - INFO - ✅ ডেটা ক্লিনিং সম্পন্ন হয়েছে।
-2026-09-02 21:15:40,185 - supermarket_analysis - INFO - ডেটা ক্লিনিং শুরু...
-2026-09-02 21:15:40,192 - supermarket_analysis - WARNING - অবৈধ রেটিং (2 টি) পাওয়া গেছে। এগুলো ড্রপ করা হচ্ছে।
-2026-09-02 21:15:40,194 - supermarket_analysis - INFO - ✅ ডেটা ক্লিনিং সম্পন্ন হয়েছে।
-2026-09-02 21:15:40,196 - supermarket_analysis - INFO - ডেটা ক্লিনিং শুরু...
-2026-09-02 21:15:40,201 - supermarket_analysis - INFO - ডুপ্লিকেট সরানো হয়েছে: 1 টি
-2026-09-02 21:15:40,202 - supermarket_analysis - INFO - ✅ ডেটা ক্লিনিং সম্পন্ন হয়েছে।
-2026-09-02 21:15:40,203 - supermarket_analysis - INFO - ডেটা ক্লিনিং শুরু...
-2026-09-02 21:15:40,211 - supermarket_analysis - INFO - ✅ ডেটা ক্লিনিং সম্পন্ন হয়েছে।
+2026-09-02 23:10:26,935 - supermarket_analysis - INFO - 🚀 Supermarket Sales Pipeline শুরু হচ্ছে...
+2026-09-02 23:10:26,935 - supermarket_analysis - INFO - ডেটা লোড করা শুরু: data/supermarket_sales.csv
+2026-09-02 23:10:26,944 - supermarket_analysis - DEBUG - ফাইল সাইজ: 583995 বাইটস
+2026-09-02 23:10:26,944 - supermarket_analysis - INFO - ✅ ডেটা সফলভাবে লোড হয়েছে। 1000 সারি, 17 কলাম।
+2026-09-02 23:10:26,944 - supermarket_analysis - INFO - ডেটা ক্লিনিং শুরু...
+2026-09-02 23:10:26,953 - supermarket_analysis - INFO - ✅ ডেটা ক্লিনিং সম্পন্ন হয়েছে।
+2026-09-02 23:10:26,953 - supermarket_analysis - INFO - ফিচার ইঞ্জিনিয়ারিং: Day of Week যোগ করা হচ্ছে
+2026-09-02 23:10:26,954 - supermarket_analysis - INFO - অ্যানালাইসিস চলছে...
+2026-09-02 23:10:26,969 - supermarket_analysis - INFO - ভিজুয়ালাইজেশন তৈরি হচ্ছে...
+2026-09-02 23:10:29,755 - supermarket_analysis - INFO - রিপোর্ট জেনারেট করা হচ্ছে...
+2026-09-02 23:10:29,755 - supermarket_analysis - INFO - 📄 রিপোর্ট জেনারেশন শুরু...
+2026-09-02 23:10:29,767 - supermarket_analysis - INFO - ✅ ক্লিন ডেটা সেভ হয়েছে: reports/cleaned_data.csv
+2026-09-02 23:10:29,860 - supermarket_analysis - INFO - ✅ এক্সেল রিপোর্ট সেভ হয়েছে: reports/analysis_report.xlsx
+2026-09-02 23:10:29,861 - supermarket_analysis - CRITICAL - 'Sales'
+2026-09-02 23:42:47,117 - supermarket_analysis - INFO - 🚀 Supermarket Sales Pipeline শুরু হচ্ছে...
+2026-09-02 23:42:47,117 - supermarket_analysis - INFO - ডেটা লোড করা শুরু: data/supermarket_sales.csv
+2026-09-02 23:42:47,127 - supermarket_analysis - DEBUG - ফাইল সাইজ: 583995 বাইটস
+2026-09-02 23:42:47,127 - supermarket_analysis - INFO - ✅ ডেটা সফলভাবে লোড হয়েছে। 1000 সারি, 17 কলাম।
+2026-09-02 23:42:47,127 - supermarket_analysis - INFO - ডেটা ক্লিনিং শুরু...
+2026-09-02 23:42:47,142 - supermarket_analysis - INFO - ✅ ডেটা ক্লিনিং সম্পন্ন হয়েছে।
+2026-09-02 23:42:47,143 - supermarket_analysis - INFO - ফিচার ইঞ্জিনিয়ারিং: Day of Week যোগ করা হচ্ছে
+2026-09-02 23:42:47,144 - supermarket_analysis - INFO - অ্যানালাইসিস চলছে...
+2026-09-02 23:42:47,166 - supermarket_analysis - INFO - ভিজুয়ালাইজেশন তৈরি হচ্ছে...
+2026-09-02 23:42:49,934 - supermarket_analysis - INFO - রিপোর্ট জেনারেট করা হচ্ছে...
+2026-09-02 23:42:49,934 - supermarket_analysis - INFO - 📄 রিপোর্ট জেনারেশন শুরু...
+2026-09-02 23:42:49,946 - supermarket_analysis - INFO - ✅ ক্লিন ডেটা সেভ হয়েছে: reports/cleaned_data.csv
+2026-09-02 23:42:50,039 - supermarket_analysis - INFO - ✅ এক্সেল রিপোর্ট সেভ হয়েছে: reports/analysis_report.xlsx
+2026-09-02 23:42:50,040 - supermarket_analysis - WARNING - Segmentation data issue: 'Segmentation columns not found'
+2026-09-02 23:42:50,041 - supermarket_analysis - INFO - ✅ টেক্সট রিপোর্ট সেভ হয়েছে: reports/summary_report.txt
+2026-09-02 23:42:50,041 - supermarket_analysis - INFO - ✅ সব রিপোর্ট তৈরি সম্পন্ন!
+2026-09-02 23:42:50,041 - supermarket_analysis - INFO - ============================================================
+2026-09-02 23:42:50,041 - supermarket_analysis - INFO - ব্যবসায়িক ইনসাইট রিপোর্ট
+2026-09-02 23:42:50,041 - supermarket_analysis - INFO - ============================================================
+2026-09-02 23:42:50,041 - supermarket_analysis - INFO - শাখা পারফরম্যান্স: Giza (সর্বোচ্চ: $110,568.71)
+2026-09-02 23:42:50,041 - supermarket_analysis - INFO - পারেটো: 4 টি পণ্যライン ৮০% বিক্রি তৈরি করছে।
+2026-09-02 23:42:50,042 - supermarket_analysis - INFO - সেরা দিন: Saturday ($56,120.81)
+2026-09-02 23:42:50,042 - supermarket_analysis - INFO - হাই-ভ্যালু অর্ডার: 9 টি
+2026-09-02 23:42:50,042 - supermarket_analysis - CRITICAL - 'Sales'
+2026-09-02 23:50:35,011 - supermarket_analysis - INFO - 🚀 Supermarket Sales Pipeline শুরু হচ্ছে...
+2026-09-02 23:50:35,011 - supermarket_analysis - INFO - ডেটা লোড করা শুরু: data/supermarket_sales.csv
+2026-09-02 23:50:35,019 - supermarket_analysis - DEBUG - ফাইল সাইজ: 583995 বাইটস
+2026-09-02 23:50:35,019 - supermarket_analysis - INFO - ✅ ডেটা সফলভাবে লোড হয়েছে। 1000 সারি, 17 কলাম।
+2026-09-02 23:50:35,019 - supermarket_analysis - INFO - ডেটা ক্লিনিং শুরু...
+2026-09-02 23:50:35,029 - supermarket_analysis - INFO - ✅ ডেটা ক্লিনিং সম্পন্ন হয়েছে।
+2026-09-02 23:50:35,030 - supermarket_analysis - INFO - ফিচার ইঞ্জিনিয়ারিং: Day of Week যোগ করা হচ্ছে
+2026-09-02 23:50:35,031 - supermarket_analysis - INFO - অ্যানালাইসিস চলছে...
+2026-09-02 23:50:35,050 - supermarket_analysis - INFO - ভিজুয়ালাইজেশন তৈরি হচ্ছে...
+2026-09-02 23:50:37,809 - supermarket_analysis - INFO - রিপোর্ট জেনারেট করা হচ্ছে...
+2026-09-02 23:50:37,809 - supermarket_analysis - INFO - 📄 রিপোর্ট জেনারেশন শুরু...
+2026-09-02 23:50:37,820 - supermarket_analysis - INFO - ✅ ক্লিন ডেটা সেভ হয়েছে: reports/cleaned_data.csv
+2026-09-02 23:50:37,923 - supermarket_analysis - INFO - ✅ এক্সেল রিপোর্ট সেভ হয়েছে: reports/analysis_report.xlsx
+2026-09-02 23:50:37,924 - supermarket_analysis - WARNING - Segmentation data issue: 'Segmentation columns not found'
+2026-09-02 23:50:37,925 - supermarket_analysis - INFO - ✅ টেক্সট রিপোর্ট সেভ হয়েছে: reports/summary_report.txt
+2026-09-02 23:50:37,925 - supermarket_analysis - INFO - ✅ সব রিপোর্ট তৈরি সম্পন্ন!
+2026-09-02 23:50:37,925 - supermarket_analysis - INFO - ============================================================
+2026-09-02 23:50:37,925 - supermarket_analysis - INFO - ব্যবসায়িক ইনসাইট রিপোর্ট
+2026-09-02 23:50:37,925 - supermarket_analysis - INFO - ============================================================
+2026-09-02 23:50:37,925 - supermarket_analysis - INFO - শাখা পারফরম্যান্স: Giza (সর্বোচ্চ: $110,568.71)
+2026-09-02 23:50:37,925 - supermarket_analysis - INFO - পারেটো: 4 টি পণ্যライン ৮০% বিক্রি তৈরি করছে।
+2026-09-02 23:50:37,926 - supermarket_analysis - INFO - সেরা দিন: Saturday ($56,120.81)
+2026-09-02 23:50:37,926 - supermarket_analysis - INFO - হাই-ভ্যালু অর্ডার: 9 টি
+2026-09-02 23:50:37,926 - supermarket_analysis - WARNING - Segmentation data issue: 'Segmentation columns not found'
+2026-09-02 23:50:37,926 - supermarket_analysis - INFO - টপ সেগমেন্ট: ডেটা পাওয়া যায়নি
+2026-09-02 23:50:37,926 - supermarket_analysis - INFO - ============================================================
+2026-09-02 23:50:37,926 - supermarket_analysis - INFO - ✅ পুরো পাইপলাইন সফলভাবে সম্পন্ন হয়েছে!
