@@ -6,24 +6,24 @@ import numpy as np
 
 def get_branch_sales(df: pd.DataFrame) -> pd.Series:
     """শাখা অনুযায়ী মোট বিক্রি রিটার্ন করে"""
-    return df.groupby('Branch')['Total'].sum().sort_values(ascending=False)
+    return df.groupby('Branch')['Sales'].sum().sort_values(ascending=False)
 
 def get_product_sales(df: pd.DataFrame) -> pd.Series:
-    """পণ্যライン অনুযায়ী মোট বিক্রি রিটার্ন করে"""
-    return df.groupby('Product line')['Total'].sum().sort_values(ascending=False)
+    """পণ্যলাইন অনুযায়ী মোট বিক্রি রিটার্ন করে"""
+    return df.groupby('Product line')['Sales'].sum().sort_values(ascending=False)
 
 def get_day_sales(df: pd.DataFrame) -> pd.Series:
-    """সপ্তাহের দিন অনুযায়ী মোট বিক্রি রিটার্ন করে"""
-    return df.groupby('Day_of_Week')['Total'].sum().sort_values(ascending=False)
+    """সপ্তাহের দিন অনুযায়ী মোট বিক্রি রিটার্ন করে"""
+    return df.groupby('Day_of_Week')['Sales'].sum().sort_values(ascending=False)
 
 def get_segmentation(df: pd.DataFrame) -> pd.DataFrame:
     """কাস্টমার টাইপ ও জেন্ডার ভিত্তিক সেগমেন্টেশন"""
     return df.groupby(['Customer type', 'Gender']).agg({
-        'Total': ['sum', 'mean', 'count'],
+        'Sales': ['sum', 'mean', 'count'],
         'Rating': 'mean'
     })
 
-def detect_outliers_iqr(df: pd.DataFrame, column: str = 'Total') -> pd.DataFrame:
+def detect_outliers_iqr(df: pd.DataFrame, column: str = 'Sales') -> pd.DataFrame:
     """IQR পদ্ধতিতে আউটলায়ার শনাক্ত করে"""
     Q1 = df[column].quantile(0.25)
     Q3 = df[column].quantile(0.75)

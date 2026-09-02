@@ -17,3 +17,9 @@ STRING_COLUMNS = ['Branch', 'City', 'Customer type', 'Gender', 'Product line', '
 
 # ভিজুয়ালাইজেশন স্টাইল
 PLOT_STYLE = 'darkgrid'
+
+LOG_NAME = "supermarket_analysis"
+EXPECTED_COLUMNS = ['Invoice ID', 'Branch', 'City', 'Customer type', 'Gender', 
+                    'Product line', 'Unit price', 'Quantity', 'Tax 5%', 'Sales', 
+                    'Date', 'Time', 'Payment', 'cogs', 'gross margin percentage', 
+                    'gross income', 'Rating']  # ডেটা ভ্যালিডেশনের জন্য

@@ -23,7 +23,7 @@ def save_visualizations(df: pd.DataFrame) -> None:
     
     # ১. শাখা অনুযায়ী বিক্রি
     plt.figure()
-    branch_sales = df.groupby('Branch')['Total'].sum().sort_values(ascending=False)
+    branch_sales = df.groupby('Branch')['Sales'].sum().sort_values(ascending=False)
     sns.barplot(x=branch_sales.index, y=branch_sales.values, palette='viridis')
     plt.title('Branch-wise Total Sales', fontsize=16)
     plt.xlabel('Branch')
@@ -32,9 +32,9 @@ def save_visualizations(df: pd.DataFrame) -> None:
     plt.savefig(f'{VIZ_PATH}01_branch_sales.png', dpi=300)
     plt.close()
     
-    # ২. পণ্যライン অনুযায়ী বিক্রি
+    # ২. পণ্যলাইন অনুযায়ী বিক্রি
     plt.figure()
-    product_sales = df.groupby('Product line')['Total'].sum().sort_values(ascending=False)
+    product_sales = df.groupby('Product line')['Sales'].sum().sort_values(ascending=False)
     sns.barplot(x=product_sales.values, y=product_sales.index, palette='magma')
     plt.title('Product Line-wise Total Sales', fontsize=16)
     plt.xlabel('Total Sales ($)')
@@ -45,7 +45,7 @@ def save_visualizations(df: pd.DataFrame) -> None:
     
     # ৩. ডিস্ট্রিবিউশন
     plt.figure()
-    sns.histplot(df['Total'], bins=20, kde=True, color='blue')
+    sns.histplot(df['Sales'], bins=20, kde=True, color='blue')
     plt.title('Distribution of Total Sales', fontsize=16)
     plt.xlabel('Total Sales ($)')
     plt.ylabel('Frequency')
@@ -55,7 +55,7 @@ def save_visualizations(df: pd.DataFrame) -> None:
     
     # ৪. স্ক্যাটার প্লট
     plt.figure()
-    sns.scatterplot(x='Unit price', y='Total', data=df, hue='Branch', alpha=0.7)
+    sns.scatterplot(x='Unit price', y='Sales', data=df, hue='Branch', alpha=0.7)
     plt.title('Unit Price vs Total Sales (by Branch)', fontsize=16)
     plt.xlabel('Unit Price ($)')
     plt.ylabel('Total Sales ($)')
@@ -66,7 +66,7 @@ def save_visualizations(df: pd.DataFrame) -> None:
     
     # ৫. বক্স প্লট
     plt.figure()
-    sns.boxplot(x='Branch', y='Total', data=df, palette='Set2')
+    sns.boxplot(x='Branch', y='Sales', data=df, palette='Set2')
     plt.title('Sales Distribution by Branch (Box Plot)', fontsize=16)
     plt.xlabel('Branch')
     plt.ylabel('Total Sales ($)')
