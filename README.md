@@ -59,12 +59,15 @@ A supermarket chain wants to derive meaningful insights from their sales data to
 ## 🔧 Installation Guide
 
 ### 1. Clone the Repository
-```bash
-git clone [https://github.com/your-username/supermarket-sales-analysis](https://github.com/Jobayer08/Supermarket-Sales).git
-cd supermarket-sales-analysis
 
-2. Create and Activate Virtual Environment
-bash
+```bash
+git clone https://github.com/Jobayer08/Supermarket-Sales.git
+cd Supermarket-Sales
+```
+
+### 2. Create and Activate Virtual Environment
+
+```bash
 python -m venv venv
 
 # On Windows
@@ -72,25 +75,37 @@ venv\Scripts\activate
 
 # On Mac/Linux
 source venv/bin/activate
-3. Install Required Packages
-bash
-pip install -r requirements.txt
-4. Download the Dataset
-Download the CSV file from Kaggle and place it in the data/ folder as supermarket_sales.csv.
+```
 
-🚀 Usage Instructions
+### 3. Install Required Packages
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Download the Dataset
+
+Download the CSV file from Kaggle and place it in the `data/` folder as `supermarket_sales.csv`.
+
+## 🚀 Usage Instructions
+
 To run the entire analysis pipeline:
 
-bash
+```bash
 python main.py
+```
+
 To run only the unit tests:
 
-bash
+```bash
 pytest
-Generated visualizations will be saved as PNG files in the visualizations/ folder. Logs will be written to the logs/ folder.
+```
 
-📁 Project Structure
-text
+Generated visualizations will be saved as PNG files in the `visualizations/` folder. Logs will be written to the `logs/` folder.
+
+## 📁 Project Structure
+
+```
 supermarket-sales-analysis/
 │
 ├── data/                      # Raw dataset
@@ -118,38 +133,42 @@ supermarket-sales-analysis/
 ├── main.py                    # Main entry point
 ├── README.md
 └── requirements.txt
-📈 Results & Visualizations
-Chart	Description
-https://visualizations/01_branch_sales.png	Total sales per branch (Branch C leads).
-https://visualizations/02_product_sales.png	Revenue by product line (Food & Beverages is top).
-https://visualizations/03_sales_distribution.png	Distribution of total sales (right-skewed).
-https://visualizations/04_price_vs_total.png	Relationship between Unit Price and Total Sales.
-https://visualizations/05_branch_boxplot.png	Sales variability and outliers by branch.
-https://visualizations/06_correlation_heatmap.png	Correlation matrix of numeric features.
-💡 Key Insights (Executive Summary)
-Branch Performance: Branch C generates the highest revenue (~$110K), surpassing other branches by 5%. This suggests its location or management strategies are highly effective.
+```
 
-Pareto Principle (80/20 Rule): 6 out of 9 product lines account for 80% of total sales. Food & Beverages and Sports & Travel are the top performers and deserve priority in marketing and inventory.
+## 📈 Results & Visualizations
 
-Weekly Trend: Saturday records the highest sales, indicating that weekend staffing and promotional efforts should be maximized.
+| Chart | Description |
+|---|---|
+| `visualizations/01_branch_sales.png` | Total sales per branch (Branch C leads). |
+| `visualizations/02_product_sales.png` | Revenue by product line (Food & Beverages is top). |
+| `visualizations/03_sales_distribution.png` | Distribution of total sales (right-skewed). |
+| `visualizations/04_price_vs_total.png` | Relationship between Unit Price and Total Sales. |
+| `visualizations/05_branch_boxplot.png` | Sales variability and outliers by branch. |
+| `visualizations/06_correlation_heatmap.png` | Correlation matrix of numeric features. |
 
-Customer Segmentation: The Member-Female segment has the highest average spending (~$345). This group is ideal for targeted loyalty campaigns.
+## 💡 Key Insights (Executive Summary)
 
-High-Value Orders: 4 outliers (orders > $899) were identified. These should be tracked separately for dedicated customer relationship management and bulk-order discounts.
+1. **Branch Performance:** Branch C generates the highest revenue (~$110K), surpassing other branches by 5%. This suggests its location or management strategies are highly effective.
+2. **Pareto Principle (80/20 Rule):** 6 out of 9 product lines account for 80% of total sales. Food & Beverages and Sports & Travel are the top performers and deserve priority in marketing and inventory.
+3. **Weekly Trend:** Saturday records the highest sales, indicating that weekend staffing and promotional efforts should be maximized.
+4. **Customer Segmentation:** The Member-Female segment has the highest average spending (~$345). This group is ideal for targeted loyalty campaigns.
+5. **High-Value Orders:** 4 outliers (orders > $899) were identified. These should be tracked separately for dedicated customer relationship management and bulk-order discounts.
 
-🔮 Future Scope
-Streamlit Dashboard: Build an interactive web application where users can upload custom CSVs and view live analysis and charts.
+## 🔮 Future Scope
 
-Time Series Forecasting: Integrate Machine Learning models (Prophet/ARIMA) to forecast monthly or weekly sales.
+- **Streamlit Dashboard:** Build an interactive web application where users can upload custom CSVs and view live analysis and charts.
+- **Time Series Forecasting:** Integrate Machine Learning models (Prophet/ARIMA) to forecast monthly or weekly sales.
+- **Database Integration:** Connect to PostgreSQL or SQLite for persistent data storage and querying.
+- **CI/CD Pipeline:** Automate testing and deployment using GitHub Actions.
 
-Database Integration: Connect to PostgreSQL or SQLite for persistent data storage and querying.
+## 📝 License
 
-CI/CD Pipeline: Automate testing and deployment using GitHub Actions.
-
-📝 License
 This project is licensed under the MIT License. You are free to use, modify, and distribute this software.
 
-🔗 Live Demo: (Coming Soon)
-✍️ Author: [Abdul Jobayer] - [[Link to your GitHub Profile](https://github.com/Jobayer08)]
+**🔗 Live Demo:** (Coming Soon)
+
+**✍️ Author:** [Abdul Jobayer](https://github.com/Jobayer08)
+
+---
 
 ⭐ If you found this project helpful, please consider giving it a star on GitHub!
