@@ -68,7 +68,7 @@ with tab1:
     
     col1, col2, col3, col4 = st.columns(4)
     
-    total_sales = df['Total'].sum()
+    total_sales = df['Sales'].sum()
     avg_rating = df['Rating'].mean()
     total_orders = len(df)
     total_branches = df['Branch'].nunique()
@@ -145,16 +145,16 @@ with tab3:
     
     # Segmentation
     seg = insights['segmentation']
-    top_seg = seg['Total']['mean'].idxmax()
+    top_seg = seg['Sales']['mean'].idxmax()
     st.subheader("👥 4. Customer Segmentation")
-    st.write(f"**Top Group:** `{top_seg[0]}` - `{top_seg[1]}` (Avg. Spend: `${seg['Total']['mean'].max():.2f}`)")
+    st.write(f"**Top Group:** `{top_seg[0]}` - `{top_seg[1]}` (Avg. Spend: `${seg['Sales']['mean'].max():.2f}`)")
     
     # Outliers
     outliers = insights['outliers']
     st.subheader("🚀 5. High-Value Orders (Outliers)")
     st.write(f"Detected **{len(outliers)}** unusually large orders.")
     if not outliers.empty:
-        st.dataframe(outliers[['Invoice ID', 'Branch', 'Product line', 'Total']].head(), use_container_width=True)
+        st.dataframe(outliers[['Invoice ID', 'Branch', 'Product line', 'Sales']].head(), use_container_width=True)
     
     st.markdown("---")
     st.success("✅ These insights can directly help improve business decisions!")
