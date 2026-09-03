@@ -1,5 +1,6 @@
 """
 Supermarket Sales Analysis - Streamlit Dashboard
+(Only default dataset, no upload option)
 """
 import streamlit as st
 import pandas as pd
@@ -22,36 +23,23 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# ========== Sidebar - CSV Upload ==========
+# ========== Sidebar (without upload) ==========
 st.sidebar.header("⚙️ Control Panel")
 st.sidebar.markdown("---")
-
-uploaded_file = st.sidebar.file_uploader("📂 Upload your CSV file", type=['csv'])
-
-st.sidebar.markdown("---")
 st.sidebar.info(
-    "**Default Dataset:** Kaggle Supermarket Sales\n\n"
-    "If you don't upload, the default dataset will be used."
+    "**Dataset:** Kaggle Supermarket Sales\n\n"
+    "This dashboard analyzes the default dataset."
 )
 
-# ========== Load Data ==========
+# ========== Load Default Data ==========
 @st.cache_data
-def load_and_process_data(file):
-    """
-    Load and clean data. Uses Streamlit's @st.cache_data to cache in memory.
-    """
-    if file is not None:
-        df = pd.read_csv(file)
-        df_clean = clean_data(df)
-    else:
-        df_clean = load_data()
-        df_clean = clean_data(df_clean)
-    
-    # Add Day of Week
+def load_and_process_data():
+    df = load_data()
+    df_clean = clean_data(df)
     df_clean['Day_of_Week'] = df_clean['Date'].dt.day_name()
     return df_clean
 
-df = load_and_process_data(uploaded_file)
+df = load_and_process_data()
 
 @st.cache_data
 def get_insights_data(dataframe):
@@ -68,7 +56,7 @@ with tab1:
     
     col1, col2, col3, col4 = st.columns(4)
     
-    total_sales = df['Sales'].sum()
+    total_sales = df['Total'].sum()          # Changed from 'Sales' to 'Total'
     avg_rating = df['Rating'].mean()
     total_orders = len(df)
     total_branches = df['Branch'].nunique()
@@ -145,16 +133,16 @@ with tab3:
     
     # Segmentation
     seg = insights['segmentation']
-    top_seg = seg['Sales']['mean'].idxmax()
+    top_seg = seg['Total']['mean'].idxmax()   # Changed from 'Sales' to 'Total'
     st.subheader("👥 4. Customer Segmentation")
-    st.write(f"**Top Group:** `{top_seg[0]}` - `{top_seg[1]}` (Avg. Spend: `${seg['Sales']['mean'].max():.2f}`)")
+    st.write(f"**Top Group:** `{top_seg[0]}` - `{top_seg[1]}` (Avg. Spend: `${seg['Total']['mean'].max():.2f}`)")
     
     # Outliers
     outliers = insights['outliers']
     st.subheader("🚀 5. High-Value Orders (Outliers)")
     st.write(f"Detected **{len(outliers)}** unusually large orders.")
     if not outliers.empty:
-        st.dataframe(outliers[['Invoice ID', 'Branch', 'Product line', 'Sales']].head(), use_container_width=True)
+        st.dataframe(outliers[['Invoice ID', 'Branch', 'Product line', 'Total']].head(), use_container_width=True)
     
     st.markdown("---")
     st.success("✅ These insights can directly help improve business decisions!")
